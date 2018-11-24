@@ -1,0 +1,500 @@
+  107  clear
+  108  pwd
+  109  history
+  110  history >> ~/commands1.txt
+  111  cat ~/commands1.txt 
+  112  pwd
+  113  clear
+  114  python3 manage.py test --settings todobackend.settings_test
+  115  sl -ltr
+  116  ls -ltr
+  117  cd todobackend/
+  118  clear
+  119  ls -ltr
+  120  cd src
+  121  clear
+  122  python3 manage.py test --settings todobackend.settings_test
+  123  python3 manage.py runserver
+  124  clear
+  125  lstree
+  126  tree
+  127  python3 manage.py migrate
+  128  python3 manage.py runserver
+  129  clear
+  130  touch Dockerfile
+  131  nano Dockerfile 
+  132  more Dockerfile 
+  133  clear
+  134  docker build --target test -t todobackend-test .
+  135  docker images
+  136  docker build --target test -t todobackend-test .
+  137  tree -L 2
+  138  docker images
+  139  docker images
+  140  docker rm 225f4a7c349f
+  141  clear
+  142  docker run -it --rm todobackend-test
+  143  clear
+  144  docker images
+  145  docker tag 225f4a7c349f todobackend-test
+  146  docker images
+  147  clear
+  148  docker run -it --rm todobackend-test
+  149  clear
+  150  docker images
+  151  docker run -it --rm todobackend-test
+  152  nano Dockerfile 
+  153  ckear
+  154  docker rmi todobackend-test
+  155  clear
+  156  docker images
+  157  clear
+  158  docker build --target test -t todobackend-test .
+  159  ls -ltr
+  160  docker iamges
+  161  docker iamges
+  162  docker iamge
+  163  clear
+  164  docker info
+  165  'clear
+  166  docker images
+  167  clear
+  168  docker images
+  169  docker rmi c3460f5992fa
+  170  clear
+  171  ls ltr
+  172  ls
+  173  clear
+  174  tree
+  175  tree -L 2
+  176  more Dockerfile 
+  177  cleare
+  178  clear
+  179  ls -ltr
+  180  clear
+  181  more Dockerfile 
+  182  docker buils --target test -t todobackend-test .
+  183  docker --help | grep target
+  184  docker --version
+  185  docker --help | grep build
+  186  docker --help | grep t
+  187  docker --help | grep target
+  188  docker build --help | grep target
+  189  docker build --target test -t todobackend-test .
+  190  docker images
+  191  cd ..
+  192  tree
+  193  tree -L 1
+  194  cd src
+  195  tree -L 1
+  196  mv Dockerfile ../
+  197  cd ..
+  198  tree -L 1
+  199  tree -L 2
+  200  docker images
+  201  docker rmi 8c9f0782d153
+  202  clear
+  203  docker build --target test -t todobackend-test .
+  204  docker images
+  205  docker run -it --rm todobackend-test
+  206  nano Dockerfile 
+  207  clear
+  208  docker build -t todobackend-release .
+  209  docker images
+  210  clear
+  211  docker images
+  212  docker run -it --rm -p 8000:8000 todobackend-release uwsgi --http=0.0.0.0:8000 --module=todobackend.wsgi --master
+  213  clear
+  214  docker images
+  215  touch docker-compose.yml
+  216  nano docker-compose.yml 
+  217  more docker-compose.yml 
+  218  clear
+  219  more docker-compose.yml 
+  220  docker-compose build test
+  221  docker-compose run test
+  222  nano docker-compose.yml 
+  223  clear
+  224  cat docker-compose.yml 
+  225  docker-compose up release
+  226  cat docker-compose.yml 
+  227  clear
+  228  clear
+  229  nano docker-compose.yml 
+  230  clear
+  231  docker-compose up release
+  232  nano docker-compose.yml 
+  233  docker-compose up release
+  234  nano docker-compose.yml 
+  235  docker-compose up 
+  236  rm docker-compose.yml 
+  237  touch docker-compose.yml
+  238  nano docker-compose.yml 
+  239  clear
+  240  cat docker-compose.yml 
+  241  docker-compose up release
+  242  clear
+  243  nano docker-compose.yml 
+  244  tree -L 1
+  245  tree -L 2
+  246  tree -L 4
+  247  cat ./src/todobackend/settings_release.py 
+  248  clear
+  249  nano docker-compose.yml 
+  250  nano docker-compose.yml 
+  251  more docker-compose.yml 
+  252  docker-compose down -v
+  253  clear
+  254  docker-compose up release
+  255  docker-compose down -v
+  256  clear
+  257  rm docker-compose.yml 
+  258  touch docker-compose.yml
+  259  nano docker-compose.yml 
+  260  docker-compose down -v
+  261  clear
+  262  docker-compose up migrate
+  263  docker-compose up app
+  264  docker-compose down -v
+  265  docker-compose up migrate
+  266  docker-compose up app
+  267  docker-compose down -v
+  268  docker-compose down -v
+  269  clear
+  270  ls -ltr
+  271  nano docker-compose.yml 
+  272  clear
+  273  ls
+  274  nano Dockerfile 
+  275  docker-compose down -v
+  276  nano Dockerfile 
+  277  nano docker-compose.yml 
+  278  docker-compose down -v
+  279  more Dockerfile 
+  280  clear
+  281  nano docker-compose.yml 
+  282  docker-compose down -v
+  283  clear
+  284  docker-compose up migrate
+  285  docker-compose run app python3 manage.py collectstatic --no-input
+  286  clear
+  287  docker-compose down -v
+  288  docker-compose build
+  289  docker-compose migrate
+  290  docker-compose up migrate
+  291  docker-compose run app python3 manage.py collectstatic --no-input
+  292  clear
+  293  docker-compose up app
+  294  clear
+  295  nano docker-compose.yml 
+  296  docker-compose down -v
+  297  docker-compose build
+  298  docker-compose up migrate
+  299  docker-compose run app python3 manage.py collectstatic --no-input
+  300  clear
+  301  docker-compose up acceptance
+  302  docker-compose down -v
+  303  clear
+  304  touch Makefile
+  305  nano Makefile 
+  306  docker images
+  307  docker images -1 -f dangling=true
+  308  docker images -q -f dangling=true
+  309  docker images -q -f dangling=true | docker rmi -f --no-prune
+  310  docker images -q -f dangling=true | xargs -ARGS docker rmi -f --no-prune ARGS
+  311  docker images -q -f dangling=true -f label=application=todobackend | xargs -I ARGS docker rmi -f --no-prune ARGS
+  312  docker images -q -f label=application=todobackend 
+  313  docker images
+  314  docker images -q -f label=application=todobackend 
+  315  docker images -q -f label=application=todobackend | xargs -I ARGS docker rmi -f --no-prune ARGS
+  316  docker images
+  317  docker images -q -f dangling=true
+  318  docker images -q -f dangling=true | xargs -I ARGS docker rmi -f --no-prune ARGS
+  319  clear
+  320  docker images
+  321  docker images -q -f dangling=true | xargs -I ARGS docker rmi -f --no-prune ARGS
+  322  docker images
+  323  docker images -q dangling=true | xargs -I ARGS docker rmi -f --no-prune ARGS
+  324  docker images
+  325  docker rmi 2fac6ef6dbab f717c267313a f1f854d0243b
+  326  docker images
+  327  docker rmi 59fe2775a626 ca3c46d8b19
+  328  clear
+  329  docker images
+  330  nano docker-compose.yml 
+  331  nano Makefile 
+  332  clear
+  333  make test
+  334  docker images
+  335  make release
+  336  docker images
+  337  clear
+  338  history
+  339  aws
+  340  clear
+  341  aws ec2 describe-subnets
+  342  clear
+  343  pwd
+  344  ls
+  345  cd docker-in-aws/
+  346  clear
+  347  ls
+  348  cd todobackend/
+  349  cd src
+  350  clear
+  351  python3 manage.py runserver
+  352  python3 manage.py runserver
+  353  clear
+  354  python3 manage.py runserver
+  355  cd../..
+  356  cd ../..
+  357  cd todobackend/src
+  358  python3 manage.py runserver
+  359  tree
+  360  cd../..
+  361  cd ../..
+  362  ls
+  363  clear
+  364  clear
+  365  curl -s localhost:8000/todos | jq
+  366  curl -s localhost:8000/todos | jq
+  367  curl -s localhost:8000/todos | jq
+  368  curl -s localhost:8000
+  369  clear
+  370  curl -s localhost:8000/todos | jq
+  371  curl -s localhost:8000 | jq
+  372  clear
+  373  cd todobackend/
+  374  nano docker-compose.yml 
+  375  curl -s localhost:8000 | jq
+  376  curl -s localhost:8000 | jq
+  377  cd src
+  378  tree -L 1
+  379  touch acceptance.bats
+  380  clear
+  381  nano acceptance.bats 
+  382  nano
+  383  pwd
+  384  cd ~
+  385  pwd
+  386  pwd
+  387  tree -l 2
+  388  ls 
+  389  clear
+  390  ls -ltr
+  391  clear
+  392  ls -ltr
+  393  pwd
+  394  mkdir ,ssh
+  395  mkdir .ssh
+  396  clear
+  397  ls -ltr
+  398  rm ,ssh
+  399  rm -r ,ssh
+  400  ls -ltr
+  401  mv admin.pem ~/.ssh
+  402  clear
+  403  ls -ltr
+  404  chmod 600 ~/.ssh/admin.pem 
+  405  clear
+  406  pip install awscli --upgrade --user
+  407  clear
+  408  aws configure
+  409  aws ec2 describe-vpcs
+  410  ls -l ~/.aws
+  411  ls -l ~/.aws/credentials
+  412  ls -l ~/.aws/credentials 
+  413  cat -l ~/.aws/credentials 
+  414  cat ~/.aws/credentials 
+  415  nano ~/.aws/credentials 
+  416  nano ~/.aws/config 
+  417  nano ~/.aws/config 
+  418  nano ~/.aws/config 
+  419  cat ~/.aws/config
+  420  clear
+  421  aws ec2 describe-vpcs --profile docker-in-aws
+  422  cat ~/.aws/config
+  423  aws profile
+  424  aws profile --help
+  425  clear
+  426  cat ~/.aws/config
+  427  nano ~/.aws/config 
+  428  clear
+  429  aws ec2 describe-vpcs --profile docker-in-aws
+  430  aws ec2 describe-vpcs --profile docker_in_aws
+  431  history >> ~/commands2.txt
+  432  aws ec2 describe-vpcs --profile docker_in_aws
+  433  clear
+  434  export AWS_PROFILE=docker_in_aws
+  435  aws ec2 describe-vpcs --query Vpcs[].VpcId
+  436  pwd
+  437  ls -ltr
+  438  touch stack.yml
+  439  nano stack.yml 
+  440  aws ec2 describe-subnets
+  441  clear
+  442  ls
+  443  nano stack.yml 
+  444  history | grep export
+  445  export AWS_PROFILE=docker_in_aws
+  446  aws cloudformation deploy --stack-name cloud9-management --template-file stack.yml --parameter-overrides SubnetId=subnet-6da6ac0a
+  447  nano stack.yml 
+  448  aws cloudformation deploy --stack-name cloud9-management --template-file ./stack.yml --parameter-overrides SubnetId=subnet-6da6ac0a
+  449  clear
+  450  clear
+  451  cd ~
+  452  ls
+  453  ls -ltr
+  454  cd docker-in-aws/
+  455  ls -ltr
+  456  cd todobackend/
+  457  tree -L 2
+  458  git add -a -m "Updated Dockerfile. Added docker-compose.yml and Makefile"
+  459  git add -A "Updated Dockerfile. Added docker-compose.yml and Makefile"
+  460  git add -a -m *  "Updated Dockerfile. Added docker-compose.yml and Makefile"
+  461  history | grep git
+  462  git add -a -m "Updated Dockerfile. Added docker-compose.yml and Makefile"
+  463  ls -ltr
+  464  cd ..
+  465  ls
+  466  cd todobackend/
+  467  ls -ltr
+  468  cd src
+  469  ls
+  470  git
+  471  cd ..
+  472  git
+  473  clear
+  474* git add * 
+  475  git add * "Updated Dockerfile. Added docker-compose.yml and Makefile"
+  476  git add -a -m *
+  477  git add -a -m
+  478  git add -A
+  479  git add -A
+  480  git push
+  481  ls -ltr
+  482  git add Dockerfile docker-compose.yml Makefile
+  483  git push "Added Dockerfile docker-compose.yml Makefile"
+  484  git push Dockerfile docker-compose.yml Makefile
+  485  git push
+  486  git pull
+  487  ls -ltr
+  488  clear
+  489  git pull
+  490  ls -ltr
+  491  clear
+  492  pwd
+  493  clear
+  494  aws ecr list-repositories
+  495  aws ecr list-repositories --profile docker_in_aws
+  496  aws ecr --help | grep list
+  497  aws ecr describe-images
+  498  aws ecr list-images
+  499  aws ecr help
+  500  aws ecr list-images
+  501  aws --version
+  502  clear
+  503  aws ecr --help
+  504  aws ecr help
+  505  clear
+  506  aws ecr
+  507  aws
+  508  aws ecr desribe repostory 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend
+  509  clear
+  510  aws ecr help | grep list
+  511  aws ecr list-images
+  512  aws ecr describe-repositories
+  513  aws ecr describe-repositories --profile docker_in_aws
+  514  aws ecr help
+  515  aws ecr delete-repository --repository-name docker-in-aws/todobackend --profile docker_in_aws
+  516  aws ecr create-repository --repository-name docker-in-aws/todobackend --profile docker_in_aws
+  517  cd ..
+  518  clear
+  519  git clone https://github.com/harneetoor/todobackend-aws.git
+  520  cd todobackend-aws/
+  521  clear
+  522  ls
+  523  touch ecr.yml
+  524  tree
+  525  nano ecr.yml 
+  526  cat ecr.yml 
+  527  clear
+  528  cat ecr.yml 
+  529  aws cloudformation deploy --template-file ecr.yml --stack-name ecr-repositories
+  530  aws cloudformation deploy --template-file ecr.yml --stack-name ecr-repositories --profile docker_in_aws
+  531  history | grep delete
+  532  aws ecr delete-repository --repository-name docker-in-aws/todobackend --profile docker_in_aws
+  533  aws cloudformation deploy --template-file ecr.yml --stack-name ecr-repositories --profile docker_in_aws
+  534  aws cloudformation deploy --template-file ecr.yml --stack-name ecr-repositories --profile docker_in_aws
+  535  clear
+  536  aws ecr get-login --no-include-email
+  537  aws ecr get-login --no-include-email --profile docker_in_aws
+  538  $(aws ecr get-login --no-include-email --profile docker_in_aws)
+  539  cd ../todobackend
+  540  clear
+  541  history | grep descrive
+  542  history | grep describe
+  543  aws ecr describe-repositories --profile docker_in_aws
+  544  aws ecr describe-repositories --profile docker_in_aws | jq
+  545  aws ecr describe-repositories --profile docker_in_aws | jq | grep repositoryArn
+  546  aws ecr describe-repositories --profile docker_in_aws | jq | grep "repositoryArn"
+  547  aws ecr describe-repositories --profile docker_in_aws | grep "repositoryArn"
+  548  jq --help
+  549  aws ecr describe-repositories --profile docker_in_aws | jq '.repositoryUri'
+  550  aws ecr describe-repositories --profile docker_in_aws | jq '.'
+  551  aws ecr describe-repositories --profile docker_in_aws | jq '.createdAt'
+  552  aws ecr describe-repositories --profile docker_in_aws | jq '.registryId'
+  553* aws ecr describe-repositories --profile docker_in_aws | jq '.registryId'
+  554  aws ecr describe-repositories --profile docker_in_aws | jq '.repositories[]'
+  555  aws ecr describe-repositories --profile docker_in_aws | jq '.repositories[0]'
+  556  aws ecr describe-repositories --profile docker_in_aws | jq '.repositories[0].repositoryUri'
+  557  requestUri=$(aws ecr describe-repositories --profile docker_in_aws | jq '.repositories[0].repositoryUri')
+  558  echo $requestUri
+  559  clear
+  560  $(aws ecr describe-repositories --profile docker_in_aws | jq '.repositories[0].repositoryUri')
+  561  docker build -t $(aws ecr describe-repositories --profile docker_in_aws | jq '.repositories[0].repositoryUri')
+  562  repostoryUri=$(aws ecr describe-repositories --profile docker_in_aws | jq '.repositories[0].repositoryUri')
+  563  docker build -t repostoryUri
+  564  docker build -t $repostoryUri
+  565  echo $requestUri
+  566  docker build -t 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend
+  567  docker build --help
+  568  docker build --help | grep t
+  569  docker build --tag 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend
+  570  docker build -t "263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend"
+  571  docker build -t '263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend'
+  572  clear
+  573  docker aws s3 --help
+  574  docker aws s3 --help | grep list
+  575  clear
+  576  docker build -t 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend .
+  577  docker images
+  578  docker push 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend .
+  579  clear
+  580  docker images
+  581  docker push --help
+  582  docker push 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend
+  583  nano docker-compose.yml 
+  584  nano docker-compose.yml 
+  585  ls
+  586  nano Makefile 
+  587  docker rmi image: 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend:latest
+  588  docker rmi image: 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend
+  589  docker images
+  590  docker rmi image: 263108955216.dkr.ecr.ap-southeast-1.amazonaws.com/docker-in-aws/todobackend
+  591  docker rmi fa785f8c865f
+  592  history | grep rmi
+  593  docker images -q -f dangling=true -f label=application=todobackend
+  594  docker images -q -f dangling=true -f label=application=todobackend | xargs -I ARGS docker rmi -f --no-prune ARGS
+  595  docker images
+  596  clear
+  597  docker-compose build release
+  598  docker-compose push release
+  599  clear
+  600  nano Makefile 
+  601  history | grep describe
+  602  aws ecr describe-repositories --profile docker_in_aws
+  603  nano Makefile 
+  604  nano Makefile 
+  605  make logout
+  606  history >> commands3.txt
